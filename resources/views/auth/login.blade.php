@@ -12,7 +12,7 @@
                 <div class="col-lg-12">
                   <div class="login-form">
                     <div class="text-center">
-                      <img src="{{asset('assets/img/prov.png')}}">
+                      
                       <h1 class="h4 text-gray-900 mb-4">Login</h1>
                     </div>
                     <form method="POST" action="{{ route('login') }}" class="user">
@@ -50,6 +50,9 @@
 
                     </form>
                     <hr>
+                    <div class="text-center">
+                      <a href="/register">Create an Account!</a>
+                    </div>
                     {{-- <div class="text-center">
                       <a class="font-weight-bold small" href="/register">Create an Account!</a>
                     </div>

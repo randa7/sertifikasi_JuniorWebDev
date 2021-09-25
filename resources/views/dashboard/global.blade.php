@@ -39,7 +39,7 @@
             Features
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="/profile">
+                <a class="nav-link" href="#">
                     <i class="fas fa-user"></i>
                     <span>Profile</span>
                 </a>
@@ -50,13 +50,13 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
                 aria-controls="collapseTable">
                 <i class="fas fa-inbox"></i>
-                <span>Arsip</span>
+                <span>Konten</span>
             </a>
             <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Arsip</h6>
-                <a class="collapse-item" href="/suratmasuk">Surat Masuk</a>
-                <a class="collapse-item" href="/suratkeluar">Surat Keluar</a>
+                <h6 class="collapse-header">Event</h6>
+                <a class="collapse-item" href="/pendaftaran">Pendaftaran</a>
+                <a class="collapse-item" href="/events">Event</a>
                 </div>
             </div>
             </li>
@@ -97,7 +97,7 @@
                     <span class="ml-2 d-none d-lg-inline text-white small">{{ Auth::user()->name }}</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="/profile">
+                    <a class="dropdown-item" href="#">
                         <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                         Profile
                     </a>

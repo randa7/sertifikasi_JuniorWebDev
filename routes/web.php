@@ -30,9 +30,20 @@ Route::get('419', function () {
 });
 
 
+//pendaftaran
+Route::get('/', [App\Http\Controllers\PendaftaranController::class, 'index']);
+Route::get('/events/{idevent}/registrasi', [App\Http\Controllers\PendaftaranController::class, 'daftar']);
+Route::post('/', [App\Http\Controllers\PendaftaranController::class, 'store']);
+
 Auth::routes();
 
 Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
 //pengguna
 Route::middleware('role:admin')->resource('pengguna', App\Http\Controllers\UserController::class);
+
+//Events
+Route::middleware('role:admin')->resource('events', App\Http\Controllers\EventsController::class);
+
+//pendaftaran
+Route::middleware('role:admin')->get('/pendaftaran', [App\Http\Controllers\PendaftaranController::class, 'dashboard']);
