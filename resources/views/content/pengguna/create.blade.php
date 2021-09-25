@@ -23,7 +23,7 @@
                 <br><br>
                 <label for="name">Nama</label>
                 <input type="text" class="form-control" id="name" name="name" value="{{ old ('name','')}}"
-                    placeholder="arsip surat" autocomplete="off">
+                    placeholder="randa" autocomplete="off">
                 @error('name')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
@@ -34,7 +34,7 @@
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" name="email" value="{{ old ('email','')}}"
-                    placeholder="user@arsip.com" autocomplete="off">
+                    placeholder="user@gmail.com" autocomplete="off">
                 @error('email')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
